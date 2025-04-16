@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détecteur de Fausses Nouvelles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Détecteur de Fausses Nouvelles</h1>
+        </header>
+        <main>
+            <form id="newsForm">
+                <label for="authorInput">Auteur :</label>
+                <input type="text" id="authorInput" placeholder="Entrez le nom de l'auteur">
+                
+                <label for="newsInput">Titre de nouvelle :</label>
+                <textarea id="newsInput" rows="4" cols="50" placeholder="Saisissez ou collez votre nouvelle ici"></textarea>
+                
+                <button type="button" onclick="checkNews()">Vérifier les Nouvelles</button>
+            </form>
+            <div id="result"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
